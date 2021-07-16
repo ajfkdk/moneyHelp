@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/itemflag"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@drawable/login2"
+>
+    <!-- 显示标题文本框 -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="我的家庭"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+    <!-- 显示提示文字文本框 -->
+    <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家庭成员信息"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:textSize="22sp"/>
+    <!-- 输入便签内容编辑框 -->
+    <ListView
+            android:id="@+id/txtFlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:id="@+id/btnflagSave"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="创建家庭"/>
+
+        <Button
+                android:id="@+id/btnflagCancel"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/btnflagSave"
+                android:text="我是成员"/>
+        <TextView
+                android:text="@string/data_txt_n_data_txt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:layout_below="@+id/btnflagCancel"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

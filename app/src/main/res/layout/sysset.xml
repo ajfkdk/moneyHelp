@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/login2"
+                tools:context="com.example.as.activity.MainActivity">
+    <TextView
+            android:id="@+id/TxtTitle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="密码重置"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:textSize="40sp"
+    />
+    <!-- 添加输入密码的编辑框EditText -->
+    <EditText android:id="@+id/txtAccount"
+              android:layout_width="300dp"
+              android:layout_height="64dp"
+              android:layout_below="@id/TxtTitle"
+			  android:layout_marginLeft="50dp"
+              android:inputType="textPassword"
+              android:hint="账号"
+    />
+	<EditText android:id="@+id/txtPwd"
+			  android:layout_width="300dp"
+			  android:layout_height="64dp"
+			  android:layout_below="@id/txtAccount"
+			  android:layout_marginLeft="50dp"
+			  android:layout_marginBottom="30dp"
+			  android:inputType="textPassword"
+			  android:hint="新密码"
+	/>
+    <!-- 添加“取消”按钮 -->
+    <Button android:id="@+id/btnsetCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPwd"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            android:text="返回"
+    />
+    <!-- 添加“设置”按钮 -->
+    <Button android:id="@+id/btnSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPwd"
+            android:layout_toLeftOf="@id/btnsetCancel"
+            android:text="修改"
+    />
+
+</RelativeLayout>
