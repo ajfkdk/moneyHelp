@@ -1,5 +1,5 @@
 # 家庭理财管理app
-- 远程android+sqlite数据库
+- 原生android+sqlite数据库
 ### 主要功能
 - 收支添加
 - 收支listview展示查看
