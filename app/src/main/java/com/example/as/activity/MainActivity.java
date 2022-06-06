@@ -22,7 +22,7 @@ import com.example.as.R;
 
 public class MainActivity extends Activity {
     GridView gvInfo;
-    String[] titles = new String[]{"新增支出", "新增收入", "支出明细", "收入明细",
+        String[] titles = new String[]{"新增支出", "新增收入", "支出明细", "收入明细",
             "我的家庭", "数据统计", "债务管理", "密码重置", "退出"};
     int[] images = new int[]{R.drawable.out,
                     R.drawable.in,

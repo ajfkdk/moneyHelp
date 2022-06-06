@@ -1,8 +1,11 @@
 package com.example.as.activity;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -37,6 +40,7 @@ public class Login extends Activity {
                     familyDAO.add(tb_family);
                     startActivity(intent);
                 } else {
+                    Log.e("password", familyDAO.find(accountLogin.getText().toString()) );
                     if (familyDAO.find(accountLogin.getText().toString()).equals(txtlogin.getText().toString())) {
                         startActivity(intent);
                     } else {

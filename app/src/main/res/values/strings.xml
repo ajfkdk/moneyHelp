@@ -10,7 +10,7 @@
 
 
     <string name="main">理财</string>
-    <string name="app_name">家庭理财</string>
+    <string name="app_name">理财app(课设)</string>
     <string name="addoutaccount">新增支出</string>
     <string name="addinaccount">新增收入</string>
     <string name="outaccountinfo">我的支出</string>
@@ -23,5 +23,5 @@
     <string name="help">帮助</string>
     <string name="chart">统计图表</string>
     <string name="action_settings">Settings</string>
-    <string name="data_txt_n_data_txt">——注——\n家庭管理分享家庭数据保存根目录data.txt\n更新家庭将家庭管理的data.txt文件放到根目录</string>
+    <string name="data_txt_n_data_txt">——注——\1927230460 课设  </string>
 </resources>

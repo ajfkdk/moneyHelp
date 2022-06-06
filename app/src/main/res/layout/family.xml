@@ -3,7 +3,7 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical"
-              android:background="@drawable/login2"
+    android:background="@drawable/mainbackground"
 >
     <!-- 显示标题文本框 -->
     <TextView

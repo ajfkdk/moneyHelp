@@ -9,5 +9,5 @@
           android:paddingTop="40dp"
           android:stretchMode="spacingWidthUniform"
           android:gravity="center"
-          android:background="@drawable/login2"
+          android:background="@drawable/mainbackground"
 />

@@ -1,62 +1,64 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/login2">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login2">
+
     <TextView
-            android:id="@+id/TxtTitle"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:textColor="#000000"
-            android:text="家庭理财管理信息系统\n\n用户登录/注册"
-            android:textSize="35sp"
-    />
+        android:id="@+id/TxtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="陈骏彬-理财管理"
+        android:textColor="#a2d7dd"
+        android:textSize="35sp" />
 
     <!-- 添加输入账号的编辑框EditText -->
-    <EditText android:id="@+id/accountLogin"
-              android:layout_width="350dp"
-              android:layout_marginTop="50dp"
-              android:layout_height="64dp"
-              android:layout_below="@id/TxtTitle"
-              android:inputType="text"
-              android:layout_centerInParent="true"
-              android:hint="@string/inAccount"
-    />
+    <EditText
+        android:id="@+id/accountLogin"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/TxtTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:hint="@string/inAccount"
+        android:inputType="text"
+        android:textColorHint="#FF6D00" />
 
     <!-- 添加输入密码的编辑框EditText -->
-    <EditText android:id="@+id/txtLogin"
-              android:layout_width="350dp"
-              android:layout_height="64dp"
-			  android:layout_centerInParent="true"
-              android:layout_below="@id/accountLogin"
-              android:inputType="textPassword"
-              android:hint="@string/inpassworld"
-    />
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="350dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/accountLogin"
+        android:layout_centerInParent="true"
+        android:hint="@string/inpassworld"
+        android:inputType="textPassword"
+        android:textColorHint="#FF6D00" />
     <!-- 添加“取消”按钮 -->
-    <Button android:id="@+id/btnClose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtLogin"
-            android:backgroundTint="@color/outColor"
-            android:layout_toRightOf="@id/btnLogin"
-            android:layout_marginLeft="115dp"
-            android:layout_marginTop="20dp"
-			android:width="120dp"
-            android:text="@string/cancel"
-            android:textSize="20dp"
-    />
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnLogin"
+        android:width="120dp"
+        android:backgroundTint="@color/outColor"
+        android:text="@string/cancel"
+        android:textSize="20dp" />
     <!-- 添加“登录”按钮 -->
-    <Button android:id="@+id/btnLogin"
-            android:backgroundTint="@color/colorAccent"
-			android:width="120dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/txtLogin"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/enter"
-            android:textSize="20dp"
-    />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:width="120dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="@string/enter"
+        android:textSize="20dp" />
 </RelativeLayout>
